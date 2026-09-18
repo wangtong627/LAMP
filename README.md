@@ -25,7 +25,7 @@ Official repository for **LAMP**, short for **L**esion-Guided **A**daptive **M**
 
 ## 📋 Publication and Code Release Status
 
-**The paper is currently under peer review.** This repository provides the paper overview, figures, archived metrics, and checkpoint download links. The source code for training, inference, and evaluation will be made publicly available at a later stage.
+**The paper is currently under peer review.** This repository provides the paper overview, figures, results reported in the paper, and checkpoint download links. The source code for training, inference, and evaluation will be made publicly available at a later stage.
 
 ## 📌 Overview
 
@@ -79,16 +79,16 @@ Against CamoDreamer, LAMP reduces overall FID by **17.9%** and increases Coverag
 
 ### LAMP results on individual datasets
 
-The following values are rounded from the [archived evaluation CSV](docs/metrics_summary.csv). KID is reported **without multiplying by 100**; Coverage is a fraction. The overall row evaluates all 798 images together and is not an average of the dataset rows.
+Results from Table I of the [paper](https://arxiv.org/abs/2609.19966). KID is reported **without multiplying by 100**; Coverage is a fraction. The overall row evaluates all 798 images together and is not an average of the dataset rows.
 
 | Dataset | Images | FID ↓ | KID ↓ | Coverage ↑ |
 | :--- | ---: | ---: | ---: | ---: |
-| CVC-300 | 60 | 139.33 | 0.049795 | 0.150 |
-| CVC-ClinicDB | 62 | 146.96 | 0.036600 | 0.919 |
-| CVC-ColonDB | 380 | 78.75 | 0.024389 | 0.329 |
-| ETIS-LaribPolypDB | 196 | 114.18 | 0.057352 | 0.168 |
-| Kvasir-SEG | 100 | 114.86 | 0.026689 | 0.970 |
-| **IPS-overall** | **798** | **61.02** | **0.017545** | **0.397** |
+| CVC-300 | 60 | 139.33 | 0.050 | 0.150 |
+| CVC-ClinicDB | 62 | 146.96 | 0.036 | 0.919 |
+| CVC-ColonDB | 380 | 78.75 | 0.024 | 0.329 |
+| ETIS-LaribPolypDB | 196 | 114.18 | 0.057 | 0.168 |
+| Kvasir-SEG | 100 | 114.86 | 0.027 | 0.970 |
+| **IPS-overall** | **798** | **61.02** | **0.018** | **0.397** |
 
 ### Qualitative comparison
 
@@ -131,7 +131,7 @@ Across the 25 model–dataset combinations, average Dice and IoU improve by **1.
 | LAMP model checkpoint | `lamp_best_valid.ckpt` | 6.44 GB | [OneDrive][checkpoints] |
 | Training initialization | `lamp_init.ckpt` | 3.31 GB | [OneDrive][checkpoints] |
 
-The model checkpoint corresponds to the archived generation results above and includes EMA state. The initialization checkpoint is used to start training; it is not the trained LAMP model. Sizes use decimal GB.
+The model checkpoint corresponds to the generation results reported in the paper and includes EMA state. The initialization checkpoint is used to start training; it is not the trained LAMP model. Sizes use decimal GB.
 
 <details>
 <summary><b>Checkpoint SHA-256 checksums</b></summary>
@@ -145,16 +145,12 @@ b1effcdde79db06e6bc966bac81537215e2f62f07a65b593904198b46b269768  lamp_init.ckpt
 
 </details>
 
-### Evaluation records
-
-The [archived evaluation CSV](docs/metrics_summary.csv) provides FID, KID, Density, Coverage, Precision, and Recall for each dataset and the pooled benchmark. Public download links for the generated-image and evaluation-input packages will be added with the corresponding release.
-
 ## 🛠️ Code and Reproducibility
 
 - [x] Paper and repository documentation
 - [x] Framework and qualitative figures
 - [x] Model and initialization checkpoints
-- [x] Archived evaluation metrics
+- [x] Experimental results reported in the paper
 - [ ] Packaged training, inference, and evaluation code
 - [ ] Generated-image and evaluation-input download packages
 

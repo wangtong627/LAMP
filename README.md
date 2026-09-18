@@ -16,7 +16,7 @@ Official repository for **LAMP**, short for **L**esion-Guided **A**daptive **M**
 
 **Given a lesion foreground, its mask, and a field-of-view (FOV) mask, LAMP synthesizes compatible mucosal context for polyp image augmentation.**
 
-[Overview](#-overview) · [Framework](#-framework-overview) · [Results](#-experimental-results) · [Downloads](#-download-resources) · [Code](#-code-and-reproducibility) · [Citation](#-citation)
+[Overview](#-overview) · [Framework](#%EF%B8%8F-framework-overview) · [Results](#-experimental-results) · [Downloads](#-download-resources) · [Code](#%EF%B8%8F-code-and-reproducibility) · [Citation](#-citation)
 
 ## 📢 News
 

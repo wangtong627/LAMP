@@ -8,9 +8,9 @@
 <sup>2</sup> Mohamed bin Zayed University of Artificial Intelligence (MBZUAI), UAE<br>
 <sup>3</sup> Case Western Reserve University, USA
 
-[![arXiv](https://img.shields.io/badge/arXiv-2609.19966-b31b1b.svg)](https://arxiv.org/abs/2609.19966)
-[![Paper PDF](https://img.shields.io/badge/Paper-PDF-blue.svg)](https://arxiv.org/pdf/2609.19966)
-[![Checkpoints](https://img.shields.io/badge/Checkpoints-OneDrive-0078D4.svg)][checkpoints]
+[![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2609.19966)
+[![Paper PDF](assets/badges/paper.svg)](https://arxiv.org/pdf/2609.19966)
+[![Checkpoints](assets/badges/checkpoints.svg)][checkpoints]
 
 Official repository for **LAMP**, short for **L**esion-Guided **A**daptive **M**ucosal Context **P**ropagation.
 
